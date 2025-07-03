@@ -2,6 +2,7 @@ from dash import Dash, html, dcc
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 from app.model import predicted_values, actual_values, time_ticks
+import os
 
 def launch_dash_app():
     app = Dash(__name__)
@@ -30,4 +31,6 @@ def launch_dash_app():
             )
         }
 
-    app.run(host="0.0.0.0", port=10000)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
