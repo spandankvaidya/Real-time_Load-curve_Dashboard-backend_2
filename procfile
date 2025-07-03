@@ -1,0 +1,1 @@
+web: python app/dash_app.py

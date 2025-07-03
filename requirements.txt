@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+polars
+lightgbm
+numpy
+python-dateutil
+dash
+gunicorn
+plotly
+pyarrow
+pandas
