@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+dash
+lightgbm
+plotly
+polars
+python-dateutil
+gunicorn
